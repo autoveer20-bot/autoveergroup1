@@ -1,0 +1,775 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>AutoVeer Group - Driving Growth. Creating Experiences.</title>
+<script src="https://cdn.tailwindcss.com/3.4.16"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+<script>
+tailwind.config = {
+theme: {
+extend: {
+colors: {
+primary: '#1e40af',
+secondary: '#dc2626'
+},
+borderRadius: {
+'none': '0px',
+'sm': '4px',
+DEFAULT: '8px',
+'md': '12px',
+'lg': '16px',
+'xl': '20px',
+'2xl': '24px',
+'3xl': '32px',
+'full': '9999px',
+'button': '8px'
+}
+}
+}
+}
+</script>
+<style>
+:where([class^="ri-"])::before {
+content: "\f3c2";
+}
+@keyframes fadeInUp {
+0% {
+opacity: 0;
+transform: translateY(30px);
+}
+100% {
+opacity: 1;
+transform: translateY(0);
+}
+}
+@keyframes slideInLeft {
+0% {
+opacity: 0;
+transform: translateX(-50px);
+}
+100% {
+opacity: 1;
+transform: translateX(0);
+}
+}
+@keyframes slideInRight {
+0% {
+opacity: 0;
+transform: translateX(50px);
+}
+100% {
+opacity: 1;
+transform: translateX(0);
+}
+}
+@keyframes marquee {
+0% {
+transform: translateX(0);
+}
+100% {
+transform: translateX(-100%);
+}
+}
+@keyframes carDrive {
+0% {
+transform: translateX(-150px);
+opacity: 1;
+}
+100% {
+transform: translateX(calc(100vw + 150px));
+opacity: 1;
+}
+}
+.animate-fade-in-up {
+animation: fadeInUp 0.8s ease-out forwards;
+}
+.animate-slide-in-left {
+animation: slideInLeft 0.8s ease-out forwards;
+}
+.animate-slide-in-right {
+animation: slideInRight 0.8s ease-out forwards;
+}
+.marquee-container {
+overflow: hidden;
+white-space: nowrap;
+position: relative;
+}
+.marquee-track {
+display: inline-flex;
+gap: 2rem;
+animation: marquee 40s linear infinite;
+}
+.marquee-track:hover {
+animation-play-state: paused;
+}
+.testimonial-card-marquee {
+flex-shrink: 0;
+white-space: normal;
+}
+.car-loader {
+position: fixed;
+top: 50%;
+left: 0;
+transform: translateY(-50%);
+font-size: 48px;
+color: #1e40af;
+z-index: 10000;
+animation: carDrive 1s ease-in-out forwards;
+pointer-events: none;
+}
+@media (max-width: 768px) {
+.car-loader {
+font-size: 32px;
+}
+}
+.page-content {
+opacity: 0;
+animation: fadeInUp 0.8s ease-out 1s forwards;
+}
+</style>
+</head>
+<body class="bg-white">
+<div class="car-loader">
+<i class="ri-car-line"></i>
+</div>
+<div class="page-content">
+<header class="bg-white shadow-sm border-b border-gray-100">
+<nav class="px-4 sm:px-6 py-3 sm:py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="font-['Pacifico'] text-lg sm:text-xl md:text-2xl text-primary">AutoVeer Group</div>
+<div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+<a href="aboutus.html" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">About Us</a>
+<a href="automobile.html" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Automobiles</a>
+<a href="autoveerhospitality.html" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Hospitality</a>
+<a href="namasteindiahandicraft.html" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Handicrafts</a>
+<a href="contactus.html" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Contact</a>
+</div>
+<button class="lg:hidden w-10 h-10 flex items-center justify-center rounded-md hover:bg-gray-100 transition-colors">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</nav>
+</header>
+<section class="relative min-h-screen flex items-center" style="background-image: url('index1.jpeg')">
+<div class="absolute inset-0 bg-gradient-to-r from-white via-white/98 to-white/60 sm:to-white/40 md:to-transparent"></div>
+<div class="relative w-full px-4 sm:px-6">
+<div class="max-w-7xl mx-auto">
+<div class="max-w-full lg:max-w-2xl">
+<h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 sm:mb-6 leading-tight opacity-0 animate-fade-in-up" style="animation-delay: 0.2s;">
+AutoVeer Group — <span class="text-primary">Driving Growth.</span> <span class="text-secondary block sm:inline">Creating Experiences.</span>
+</h1>
+<p class="text-lg sm:text-xl text-gray-700 mb-6 sm:mb-8 leading-relaxed opacity-0 animate-fade-in-up" style="animation-delay: 0.4s;">
+A diversified Indian enterprise redefining excellence across Automobiles, Hospitality, and Indian Handicrafts.
+</p>
+<p class="text-base sm:text-lg text-gray-600 mb-8 sm:mb-10 leading-relaxed opacity-0 animate-fade-in-up" style="animation-delay: 0.6s;">
+AutoVeer Group is a multi-industry organization headquartered in New Delhi, India, operating with one unified vision — to deliver innovation, trust, and value in every venture. With decades of experience, we take pride in transforming the way India moves, relaxes, and celebrates its heritage.
+</p>
+<div class="flex flex-col sm:flex-row gap-3 sm:gap-4 opacity-0 animate-fade-in-up" style="animation-delay: 0.8s;">
+
+    
+<a href="contactus.html">
+<button class="border-2 border-primary text-primary px-6 sm:px-8 py-3 sm:py-4 !rounded-button font-semibold hover:bg-primary hover:text-white transition-all duration-300 hover:scale-105 hover:shadow-lg whitespace-nowrap text-sm sm:text-base">
+Contact Us
+</button>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 sm:py-16 lg:py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-12 sm:mb-16">
+<h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Our Subdivisions</h2>
+<p class="text-lg sm:text-xl text-gray-600">Three distinct verticals, one unified vision</p>
+</div>
+<div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+<div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow sm:col-span-2 lg:col-span-1">
+<div class="h-40 sm:h-48 bg-cover bg-center" style="background-image: url('index2.jpeg');"></div>
+<div class="p-6 sm:p-8">
+<h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">AutoVeer Automobiles</h3>
+<p class="text-primary font-semibold mb-3 sm:mb-4 text-sm sm:text-base">Accelerating performance. Empowering journeys.</p>
+<p class="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
+AutoVeer Automobiles is one of North India's fastest-growing automobile networks, offering 2-wheelers, 3-wheelers, and 4-wheelers through leading brands like Nissan, Ashok Leyland, and Bajaj. With multiple showrooms and workshops across Haryana and Delhi NCR, we are committed to providing seamless sales, service, and customer satisfaction experiences.
+</p>
+<a href="automobile.html">
+    <button class="text-primary font-semibold hover:text-blue-700 transition-colors flex items-center gap-2 text-sm sm:text-base">
+Visit Website <i class="ri-arrow-right-line"></i>
+</button>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+<div class="h-40 sm:h-48 bg-cover bg-center" style="background-image: url('index3.jpeg');"></div>
+<div class="p-6 sm:p-8">
+<h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">AutoVeer Hospitality</h3>
+<p class="text-primary font-semibold mb-2 text-sm sm:text-base">Where comfort meets culture.</p>
+<p class="text-xs sm:text-sm text-gray-500 mb-3 sm:mb-4">Visit: autoveerhospitality.com</p>
+<p class="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
+AutoVeer Hospitality brings India's warmth and elegance to life through our resort Namaste Dwaar and luxury villa IndRaj. We specialize in curating unique stays that combine traditional Indian hospitality with modern luxury — designed for travelers who value authenticity, peace, and personalized service.
+</p>
+<a href="autoveerhospitality.html">
+    <button class="text-primary font-semibold hover:text-blue-700 transition-colors flex items-center gap-2 text-sm sm:text-base">
+Visit Website <i class="ri-external-link-line"></i>
+</button>
+</a>
+</div>
+</div>
+<div class="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+<div class="h-40 sm:h-48 bg-cover bg-center" style="background-image: url('index4.jpeg');"></div>
+<div class="p-6 sm:p-8">
+<h3 class="text-xl sm:text-2xl font-bold text-gray-900 mb-2">Namaste India Handicrafts</h3>
+<p class="text-primary font-semibold mb-2 text-sm sm:text-base">Crafted in India. Admired worldwide.</p>
+<p class="text-xs sm:text-sm text-gray-500 mb-3 sm:mb-4">Visit: namasteindia.in</p>
+<p class="text-gray-600 mb-4 sm:mb-6 leading-relaxed text-sm sm:text-base">
+Celebrating India's artistic legacy, Namaste India Handicrafts empowers local artisans to create exquisite handicrafts, décor, and lifestyle products. We export Indian culture through craftsmanship — each piece is a tribute to heritage, sustainability, and timeless design.
+</p>
+<a href="namasteindiahandicraft.html">
+    <button class="text-primary font-semibold hover:text-blue-700 transition-colors flex items-center gap-2 text-sm sm:text-base">
+Visit Website <i class="ri-external-link-line"></i>
+</button>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 sm:py-16 lg:py-20 bg-white">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-12 sm:mb-16 opacity-0 animate-fade-in-up achievement-title">
+<h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">Our Achievements</h2>
+<p class="text-lg sm:text-xl text-gray-600">Building trust. Delivering results.</p>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
+<div class="text-center opacity-0 animate-fade-in-up achievement-item hover:scale-105 transition-all duration-300" style="animation-delay: 0.2s;">
+<div class="w-16 h-16 sm:w-20 sm:h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 hover:bg-primary/20 transition-colors duration-300">
+<i class="ri-user-heart-line text-2xl sm:text-3xl text-primary"></i>
+</div>
+<div class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 counter" data-target="4125">0+</div>
+<p class="text-gray-600 text-sm sm:text-base leading-tight">Happy Customers who continue to trust the AutoVeer promise</p>
+</div>
+<div class="text-center opacity-0 animate-fade-in-up achievement-item hover:scale-105 transition-all duration-300" style="animation-delay: 0.4s;">
+<div class="w-16 h-16 sm:w-20 sm:h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 hover:bg-primary/20 transition-colors duration-300">
+<i class="ri-store-line text-2xl sm:text-3xl text-primary"></i>
+</div>
+<div class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 counter" data-target="7">0</div>
+<p class="text-gray-600 text-sm sm:text-base leading-tight">Vehicle Showrooms across North India, offering sales and service excellence</p>
+</div>
+<div class="text-center opacity-0 animate-fade-in-up achievement-item hover:scale-105 transition-all duration-300" style="animation-delay: 0.6s;">
+<div class="w-16 h-16 sm:w-20 sm:h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 hover:bg-primary/20 transition-colors duration-300">
+<i class="ri-building-line text-2xl sm:text-3xl text-primary"></i>
+</div>
+<div class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2 counter" data-target="2">0</div>
+<p class="text-gray-600 text-sm sm:text-base leading-tight">Luxury Properties redefining Indian hospitality</p>
+</div>
+<div class="text-center opacity-0 animate-fade-in-up achievement-item hover:scale-105 transition-all duration-300" style="animation-delay: 0.8s;">
+<div class="w-16 h-16 sm:w-20 sm:h-20 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-3 sm:mb-4 hover:bg-primary/20 transition-colors duration-300">
+<i class="ri-rocket-line text-2xl sm:text-3xl text-primary"></i>
+</div>
+<div class="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-2">∞</div>
+<p class="text-gray-600 text-sm sm:text-base leading-tight">Expanding Across Industries with innovation, ethics, and excellence</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-gray-50 to-white relative overflow-hidden">
+<div class="absolute inset-0 bg-gradient-to-r from-primary/5 to-secondary/5"></div>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 relative">
+<div class="text-center mb-12 sm:mb-16 opacity-0 animate-fade-in-up history-title">
+<h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">History of AutoVeer</h2>
+<p class="text-lg sm:text-xl text-gray-600 mb-2">11 Years of Excellence & Innovation</p>
+<p class="text-base sm:text-lg text-gray-500">From a single dealership to a diversified enterprise</p>
+</div>
+<div class="max-w-6xl mx-auto relative">
+<div class="hidden sm:block absolute left-1/2 transform -translate-x-1/2 w-1 bg-gradient-to-b from-primary via-secondary to-primary h-full opacity-20"></div>
+<div class="sm:hidden absolute left-6 w-0.5 bg-gradient-to-b from-primary via-secondary to-primary h-full opacity-30"></div>
+<div class="space-y-8 sm:space-y-12">
+<div class="relative flex items-center justify-center opacity-0 animate-fade-in-up history-item" style="animation-delay: 0.1s;">
+<div class="hidden sm:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg"></div>
+<div class="sm:hidden absolute left-6 transform -translate-x-1/2 w-3 h-3 bg-primary rounded-full border-2 border-white shadow-lg"></div>
+<div class="w-full grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center pl-12 sm:pl-0">
+<div class="md:text-right">
+<div class="bg-white p-6 sm:p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-l-4 border-primary">
+<h3 class="text-lg sm:text-xl font-bold text-primary mb-2 sm:mb-3">2013 - The Foundation</h3>
+<p class="text-gray-700 leading-relaxed text-sm sm:text-base">AutoVeer began its remarkable journey with a single automobile dealership, establishing the foundation of trust and excellence that would define our future.</p>
+</div>
+</div>
+<div class="md:order-2">
+<div class="text-4xl sm:text-5xl md:text-6xl font-bold text-primary/20 text-center md:text-left">2013</div>
+</div>
+</div>
+</div>
+<div class="relative flex items-center justify-center opacity-0 animate-fade-in-up history-item" style="animation-delay: 0.2s;">
+<div class="hidden sm:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-lg"></div>
+<div class="sm:hidden absolute left-6 transform -translate-x-1/2 w-3 h-3 bg-secondary rounded-full border-2 border-white shadow-lg"></div>
+<div class="w-full grid sm:grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8 items-center pl-12 sm:pl-0">
+<div class="order-2 md:order-1">
+<div class="text-4xl sm:text-5xl md:text-6xl font-bold text-secondary/20 text-center md:text-right">2014</div>
+</div>
+<div class="order-1 md:order-2">
+<div class="bg-white p-6 sm:p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-l-4 sm:border-l-0 sm:border-r-4 border-secondary">
+<h3 class="text-lg sm:text-xl font-bold text-secondary mb-2 sm:mb-3">2014 - First Expansion</h3>
+<p class="text-gray-700 leading-relaxed text-sm sm:text-base">Expanded our automobile network with additional dealership locations, strengthening our presence in North India and building deeper customer relationships.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative flex items-center justify-center opacity-0 animate-fade-in-up history-item" style="animation-delay: 0.3s;">
+<div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg"></div>
+<div class="w-full grid md:grid-cols-2 gap-8 items-center">
+<div class="md:text-right">
+<div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-l-4 border-primary">
+<h3 class="text-xl font-bold text-primary mb-3">2015 - Commercial Revolution</h3>
+<p class="text-gray-700 leading-relaxed">Major breakthrough with commercial vehicle partnerships and comprehensive workshop operations, serving both individual and fleet customers across multiple regions.</p>
+</div>
+</div>
+<div class="md:order-2">
+<div class="text-6xl font-bold text-primary/20 text-center md:text-left">2015</div>
+</div>
+</div>
+</div>
+<div class="relative flex items-center justify-center opacity-0 animate-fade-in-up history-item" style="animation-delay: 0.4s;">
+<div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-lg"></div>
+<div class="w-full grid md:grid-cols-2 gap-8 items-center">
+<div class="order-2 md:order-1">
+<div class="text-6xl font-bold text-secondary/20 text-center md:text-right">2017</div>
+</div>
+<div class="order-1 md:order-2">
+<div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-r-4 border-secondary">
+<h3 class="text-xl font-bold text-secondary mb-3">2017 - Hospitality Vision</h3>
+<p class="text-gray-700 leading-relaxed">Diversified into hospitality with the grand launch of Namaste Dwaar Resort, blending traditional Indian hospitality with modern luxury experiences.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative flex items-center justify-center opacity-0 animate-fade-in-up history-item" style="animation-delay: 0.5s;">
+<div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg"></div>
+<div class="w-full grid md:grid-cols-2 gap-8 items-center">
+<div class="md:text-right">
+<div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-l-4 border-primary">
+<h3 class="text-xl font-bold text-primary mb-3">2019 - Cultural Heritage</h3>
+<p class="text-gray-700 leading-relaxed">Launched Namaste India Handicrafts, celebrating and promoting Indian artisan culture while creating sustainable livelihoods for traditional craftspeople.</p>
+</div>
+</div>
+<div class="md:order-2">
+<div class="text-6xl font-bold text-primary/20 text-center md:text-left">2019</div>
+</div>
+</div>
+</div>
+<div class="relative flex items-center justify-center opacity-0 animate-fade-in-up history-item" style="animation-delay: 0.6s;">
+<div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-secondary rounded-full border-4 border-white shadow-lg"></div>
+<div class="w-full grid md:grid-cols-2 gap-8 items-center">
+<div class="order-2 md:order-1">
+<div class="text-6xl font-bold text-secondary/20 text-center md:text-right">2021</div>
+</div>
+<div class="order-1 md:order-2">
+<div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-r-4 border-secondary">
+<h3 class="text-xl font-bold text-secondary mb-3">2021 - Digital Transformation</h3>
+<p class="text-gray-700 leading-relaxed">Embraced digital innovation with online platforms, e-commerce integration, and digital marketing strategies, adapting to changing customer preferences post-pandemic.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative flex items-center justify-center opacity-0 animate-fade-in-up history-item" style="animation-delay: 0.7s;">
+<div class="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-primary rounded-full border-4 border-white shadow-lg"></div>
+<div class="w-full grid md:grid-cols-2 gap-8 items-center">
+<div class="md:text-right">
+<div class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-l-4 border-primary">
+<h3 class="text-xl font-bold text-primary mb-3">2022 - Premium Expansion</h3>
+<p class="text-gray-700 leading-relaxed">Introduced luxury villa IndRaj and expanded handicraft exports internationally, establishing AutoVeer as a premium lifestyle brand across multiple sectors.</p>
+</div>
+</div>
+<div class="md:order-2">
+<div class="text-6xl font-bold text-primary/20 text-center md:text-left">2022</div>
+</div>
+</div>
+</div>
+<div class="relative flex items-center justify-center opacity-0 animate-fade-in-up history-item" style="animation-delay: 0.8s;">
+<div class="absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-gradient-to-br from-primary to-secondary rounded-full border-4 border-white shadow-xl animate-pulse"></div>
+<div class="w-full grid md:grid-cols-2 gap-8 items-center">
+<div class="order-2 md:order-1">
+<div class="text-6xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent text-center md:text-right">2024</div>
+</div>
+<div class="order-1 md:order-2">
+<div class="bg-gradient-to-br from-primary/5 to-secondary/5 p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 border-2 border-primary/20">
+<h3 class="text-xl font-bold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent mb-3">2024 - Today & Beyond</h3>
+<p class="text-gray-700 leading-relaxed">Continuing our legacy with over 4,125 happy customers, 7 showrooms, and expanding horizons. AutoVeer Group stands as a symbol of trust, innovation, and cultural pride.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="text-center mt-12 sm:mt-16 opacity-0 animate-fade-in-up" style="animation-delay: 1s;">
+<div class="bg-white p-6 sm:p-8 rounded-3xl shadow-2xl max-w-4xl mx-auto border border-primary/10">
+<p class="text-xl sm:text-2xl text-gray-800 font-bold mb-3 sm:mb-4">11 Years of Excellence</p>
+<p class="text-base sm:text-lg text-gray-600 leading-relaxed">From a single dealership to a diversified enterprise spanning automobiles, hospitality, and handicrafts — our journey continues with unwavering commitment to quality, innovation, and customer satisfaction.</p>
+</div>
+</div>
+</div>
+</section>
+<section class="py-12 sm:py-16 lg:py-20 bg-white overflow-hidden">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="text-center mb-12 sm:mb-16 opacity-0 animate-fade-in-up testimonials-title">
+<h2 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">💬 Testimonials</h2>
+<p class="text-lg sm:text-xl text-gray-600">What our customers say about us</p>
+</div>
+<div class="marquee-container">
+<div class="marquee-track">
+<div class="testimonial-card-marquee bg-gray-50 p-4 sm:p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 min-w-72 sm:min-w-80">
+<div class="flex items-center gap-1 mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-700 mb-4 italic leading-relaxed text-sm">
+"AutoVeer doesn't just sell vehicles — they build relationships. Exceptional after-sales service!"
+</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm">RS</div>
+<div>
+<p class="font-semibold text-gray-900 text-sm">Rajesh Sharma</p>
+<p class="text-xs text-gray-600">Nissan Owner</p>
+</div>
+</div>
+</div>
+<div class="testimonial-card-marquee bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 min-w-80">
+<div class="flex items-center gap-1 mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-700 mb-4 italic leading-relaxed text-sm">
+"Namaste Dwaar is more than a resort; it's a spiritual experience. The hospitality is unmatched."
+</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm">PM</div>
+<div>
+<p class="font-semibold text-gray-900 text-sm">Priya Mehta</p>
+<p class="text-xs text-gray-600">Guest</p>
+</div>
+</div>
+</div>
+<div class="testimonial-card-marquee bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 min-w-80">
+<div class="flex items-center gap-1 mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-700 mb-4 italic leading-relaxed text-sm">
+"The craftsmanship of Namaste India products brings Indian tradition alive in our homes."
+</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm">AV</div>
+<div>
+<p class="font-semibold text-gray-900 text-sm">Amit Verma</p>
+<p class="text-xs text-gray-600">Retail Partner</p>
+</div>
+</div>
+</div>
+<div class="testimonial-card-marquee bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 min-w-80">
+<div class="flex items-center gap-1 mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-700 mb-4 italic leading-relaxed text-sm">
+"Outstanding service quality and genuine care for customer satisfaction. Highly recommended!"
+</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm">SK</div>
+<div>
+<p class="font-semibold text-gray-900 text-sm">Suresh Kumar</p>
+<p class="text-xs text-gray-600">Bajaj Customer</p>
+</div>
+</div>
+</div>
+<div class="testimonial-card-marquee bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 min-w-80">
+<div class="flex items-center gap-1 mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-700 mb-4 italic leading-relaxed text-sm">
+"The luxury villa experience was beyond our expectations. Perfect for a peaceful getaway."
+</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm">AG</div>
+<div>
+<p class="font-semibold text-gray-900 text-sm">Anita Gupta</p>
+<p class="text-xs text-gray-600">IndRaj Guest</p>
+</div>
+</div>
+</div>
+<div class="testimonial-card-marquee bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 min-w-80">
+<div class="flex items-center gap-1 mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-700 mb-4 italic leading-relaxed text-sm">
+"Beautiful handicrafts that perfectly capture Indian culture. Great quality and authentic designs."
+</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm">RJ</div>
+<div>
+<p class="font-semibold text-gray-900 text-sm">Ravi Joshi</p>
+<p class="text-xs text-gray-600">Export Partner</p>
+</div>
+</div>
+</div>
+<div class="testimonial-card-marquee bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 min-w-80">
+<div class="flex items-center gap-1 mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-700 mb-4 italic leading-relaxed text-sm">
+"Professional team, competitive pricing, and excellent maintenance services. Very satisfied!"
+</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm">MS</div>
+<div>
+<p class="font-semibold text-gray-900 text-sm">Manoj Singh</p>
+<p class="text-xs text-gray-600">Commercial Vehicle Owner</p>
+</div>
+</div>
+</div>
+<div class="testimonial-card-marquee bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 min-w-80">
+<div class="flex items-center gap-1 mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-700 mb-4 italic leading-relaxed text-sm">
+"The resort's ambiance is incredible. Perfect blend of tradition and modern comfort."
+</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm">DK</div>
+<div>
+<p class="font-semibold text-gray-900 text-sm">Deepak Kapoor</p>
+<p class="text-xs text-gray-600">Corporate Guest</p>
+</div>
+</div>
+</div>
+<div class="testimonial-card-marquee bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 min-w-80">
+<div class="flex items-center gap-1 mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-700 mb-4 italic leading-relaxed text-sm">
+"Exceptional craftsmanship and timely delivery. These products truly represent Indian heritage."
+</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm">NP</div>
+<div>
+<p class="font-semibold text-gray-900 text-sm">Neha Patel</p>
+<p class="text-xs text-gray-600">Interior Designer</p>
+</div>
+</div>
+</div>
+<div class="testimonial-card-marquee bg-gray-50 p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 min-w-80">
+<div class="flex items-center gap-1 mb-4">
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+<i class="ri-star-fill text-yellow-400"></i>
+</div>
+<p class="text-gray-700 mb-4 italic leading-relaxed text-sm">
+"Reliable service network and genuine spare parts availability. AutoVeer is truly trustworthy."
+</p>
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-semibold text-sm">VT</div>
+<div>
+<p class="font-semibold text-gray-900 text-sm">Vikram Thakur</p>
+<p class="text-xs text-gray-600">Fleet Manager</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<footer class="bg-gray-900 text-white py-12 sm:py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-12">
+<div class="sm:col-span-2 lg:col-span-1">
+<div class="font-['Pacifico'] text-xl sm:text-2xl text-white mb-3 sm:mb-4">AutoVeer Group</div>
+<p class="text-gray-300 leading-relaxed text-sm sm:text-base">A vision for India's future — moving, resting, and creating with purpose.</p>
+</div>
+<div>
+<h4 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Industries</h4>
+<ul class="space-y-1.5 sm:space-y-2">
+<li><a href="automobile.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">AutoVeer Automobiles</a></li>
+<li><a href="autoveerhospitality.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">AutoVeer Hospitality</a></li>
+<li><a href="namasteindiahandicraft.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Namaste India Handicrafts</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Quick Links</h4>
+<ul class="space-y-1.5 sm:space-y-2">
+<li><a href="aboutus.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">About Us</a></li>
+<li><a href="contactus.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Contact Us</a></li>
+<li><a href="careers.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Careers / Internships</a></li>
+<li><a href="events.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Events</a></li>
+<li><a href="termsandconditions.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Terms & Conditions</a></li>
+<li><a href="privacypolicy.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="sm:col-span-2 lg:col-span-1">
+<h4 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Follow Us</h4>
+<div class="flex gap-3 sm:gap-4 mb-4 sm:mb-6">
+<a href="https://www.instagram.com/autoveergroup/" class="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+<i class="ri-instagram-line text-base sm:text-lg"></i>
+</a>
+<a href="https://www.facebook.com/AutoveerPvtLtd" class="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+<i class="ri-facebook-line text-base sm:text-lg"></i>
+</a>
+<a href="https://www.linkedin.com/in/namaste-dwaar-the-gateway-to-rural-india-81b266399/" class="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+<i class="ri-linkedin-line text-base sm:text-lg"></i>
+</a>
+</div>
+<h5 class="font-semibold mb-2 text-sm sm:text-base">Our Locations</h5>
+<p class="text-gray-300 text-xs sm:text-sm">New Delhi, India<br>Haryana & Delhi NCR</p>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-6 sm:pt-8 text-center">
+<p class="text-gray-400 text-sm">&copy; 2026 AutoVeer Group. All rights reserved.</p>
+</div>
+</div>
+</footer>
+</div>
+<script id="page-loader">
+document.addEventListener('DOMContentLoaded', function() {
+const carLoader = document.querySelector('.car-loader');
+const pageContent = document.querySelector('.page-content');
+// Remove the car after animation completes
+setTimeout(() => {
+carLoader.remove();
+}, 1000);
+});
+</script>
+<script id="navigation-toggle">
+document.addEventListener('DOMContentLoaded', function() {
+const menuButton = document.querySelector('button[class*="lg:hidden"]');
+const mobileMenu = document.createElement('div');
+mobileMenu.className = 'lg:hidden bg-white border-t border-gray-100 px-4 sm:px-6 py-4 space-y-4 hidden';
+mobileMenu.innerHTML = `
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors py-2">About Us</a>
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors py-2">Automobiles</a>
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors py-2">Hospitality</a>
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors py-2">Handicrafts</a>
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors py-2">Contact</a>
+`;
+document.querySelector('header nav').appendChild(mobileMenu);
+menuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+const icon = menuButton.querySelector('i');
+icon.className = mobileMenu.classList.contains('hidden') ? 'ri-menu-line text-xl' : 'ri-close-line text-xl';
+});
+});
+</script>
+<script id="smooth-scroll">
+document.addEventListener('DOMContentLoaded', function() {
+const buttons = document.querySelectorAll('button');
+buttons.forEach(button => {
+if (button.textContent.includes('Explore Our Divisions')) {
+button.addEventListener('click', function() {
+document.querySelector('section:first-of-type').scrollIntoView({
+behavior: 'smooth'
+});
+});
+}
+});
+});
+</script>
+<script id="scroll-animations">
+document.addEventListener('DOMContentLoaded', function() {
+const observerOptions = {
+threshold: 0.1,
+rootMargin: '0px 0px -50px 0px'
+};
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+entry.target.style.animationPlayState = 'running';
+}
+});
+}, observerOptions);
+const animatedElements = document.querySelectorAll('.animate-fade-in-up, .animate-slide-in-left, .animate-slide-in-right');
+animatedElements.forEach(el => {
+el.style.animationPlayState = 'paused';
+observer.observe(el);
+});
+});
+</script>
+<script id="counter-animation">
+document.addEventListener('DOMContentLoaded', function() {
+const counterElements = document.querySelectorAll('.counter');
+// Initialize all counters to 0
+counterElements.forEach(counter => {
+const hasPlus = counter.textContent.includes('+');
+counter.textContent = hasPlus ? '0+' : '0';
+});
+const observerOptions = {
+threshold: 0.3
+};
+const counterObserver = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if (entry.isIntersecting) {
+const counter = entry.target;
+const target = parseInt(counter.dataset.target);
+const hasPlus = counter.dataset.target === '4125';
+const duration = 2500;
+const startTime = performance.now();
+const animateCounter = (currentTime) => {
+const elapsed = currentTime - startTime;
+const progress = Math.min(elapsed / duration, 1);
+// Easing function for smooth animation
+const easeOutQuart = 1 - Math.pow(1 - progress, 4);
+const current = Math.floor(target * easeOutQuart);
+counter.textContent = current + (hasPlus ? '+' : '');
+if (progress < 1) {
+requestAnimationFrame(animateCounter);
+} else {
+counter.textContent = target + (hasPlus ? '+' : '');
+}
+};
+requestAnimationFrame(animateCounter);
+counterObserver.unobserve(counter);
+}
+});
+}, observerOptions);
+counterElements.forEach(counter => {
+counterObserver.observe(counter);
+});
+});
+</script>
+
+</html>

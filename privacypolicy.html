@@ -1,0 +1,449 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - AutoVeer Group</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A1D56',
+                        secondary: '#081536'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    <style>
+        :where([class^="ri-"])::before {
+            content: "\f3c2";
+        }
+        .animate-slide-in-left {
+            animation: slideInLeft 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateX(-30px);
+        }
+        .animate-fade-up {
+            animation: fadeUp 0.8s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        .animate-underline {
+            position: relative;
+        }
+        .animate-underline::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: #0A1D56;
+            animation: expandWidth 1.2s ease-out 0.5s forwards;
+        }
+        @keyframes slideInLeft {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes fadeUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        @keyframes expandWidth {
+            to {
+                width: 80px;
+            }
+        }
+        .back-to-top {
+            position: fixed;
+            bottom: 2rem;
+            right: 2rem;
+            opacity: 0;
+            transition: all 0.3s ease;
+            z-index: 50;
+        }
+        .back-to-top.show {
+            opacity: 1;
+        }
+        .back-to-top:hover {
+            box-shadow: 0 0 20px rgba(10, 29, 86, 0.4);
+        }
+        .section-observer {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.8s ease-out;
+        }
+        .section-observer.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .heading-observer {
+            opacity: 0;
+            transform: translateX(-30px);
+            transition: all 0.8s ease-out;
+        }
+        .heading-observer.visible {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    </style>
+</head>
+<header class="bg-white shadow-sm border-b border-gray-100">
+<nav class="px-4 sm:px-6 py-3 sm:py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="font-['Pacifico'] text-lg sm:text-xl md:text-2xl text-primary">AutoVeer Group</div>
+<div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+<a href="aboutus.html" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">About Us</a>
+<a href="automobile.html" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Automobiles</a>
+<a href="autoveerhospitality.html" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Hospitality</a>
+<a href="namasteindiahandicraft.html" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Handicrafts</a>
+<a href="contactus.html" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Contact</a>
+</div>
+<button class="lg:hidden w-10 h-10 flex items-center justify-center rounded-md hover:bg-gray-100 transition-colors">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</nav>
+</header>
+<body class="bg-white font-['Poppins'] text-gray-700 leading-relaxed">
+    <div class="border-t-4 border-primary"></div>
+    
+    <div class="max-w-4xl mx-auto px-6 py-12">
+        <header class="text-center mb-16">
+            <h1 class="text-5xl font-bold text-black font-['Playfair_Display'] mb-6 animate-underline">Privacy Policy</h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto animate-fade-up" style="animation-delay: 0.3s;">Your privacy matters to us at AutoVeer Group. This policy explains how we collect, use, and protect your personal information.</p>
+        </header>
+
+        <div class="bg-white rounded-lg shadow-lg p-8 space-y-12">
+            <section class="section-container">
+                <h2 class="text-3xl font-semibold text-primary font-['Playfair_Display'] mb-6 heading-observer">Information We Collect</h2>
+                <div class="section-observer">
+                    <p class="text-lg mb-4">We may collect the following information when you interact with us online or offline:</p>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                            <span>Name, phone number, email address</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                            <span>Vehicle or service interests, booking details</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                            <span>Resume or employment data (for job applications)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-2 h-2 bg-primary rounded-full mt-2 mr-3 flex-shrink-0"></div>
+                            <span>Basic device and browser data (for website analytics)</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section-container">
+                <h2 class="text-3xl font-semibold text-primary font-['Playfair_Display'] mb-6 heading-observer">How We Use Your Information</h2>
+                <div class="section-observer">
+                    <ul class="space-y-4 text-gray-600">
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="ri-check-line text-primary text-sm"></i>
+                            </div>
+                            <span>To respond to your inquiries and provide requested services</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="ri-check-line text-primary text-sm"></i>
+                            </div>
+                            <span>To send service updates, offers, or event invitations</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="ri-check-line text-primary text-sm"></i>
+                            </div>
+                            <span>To improve our websites, digital campaigns, and user experience</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 flex items-center justify-center bg-primary/10 rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="ri-check-line text-primary text-sm"></i>
+                            </div>
+                            <span>To process career applications and communicate hiring decisions</span>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section-container">
+                <h2 class="text-3xl font-semibold text-primary font-['Playfair_Display'] mb-6 heading-observer">Data Protection & Security</h2>
+                <div class="section-observer">
+                    <div class="bg-gray-50 rounded-lg p-6 mb-4">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 flex items-center justify-center bg-primary rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="ri-shield-check-line text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-gray-700 mb-3">We implement modern security measures, including encryption and secure servers, to protect your data from unauthorized access, disclosure, or misuse.</p>
+                                <p class="text-gray-600">Only authorized AutoVeer employees or partners handle customer information.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-container">
+                <h2 class="text-3xl font-semibold text-primary font-['Playfair_Display'] mb-6 heading-observer">Cookies & Website Analytics</h2>
+                <div class="section-observer">
+                    <div class="flex items-start">
+                        <div class="w-8 h-8 flex items-center justify-center bg-amber-100 rounded-full mr-4 mt-1 flex-shrink-0">
+                            <i class="ri-pie-chart-line text-amber-600 text-lg"></i>
+                        </div>
+                        <div>
+                            <p class="text-gray-700 mb-3">Our website may use cookies to analyze traffic and enhance performance.</p>
+                            <p class="text-gray-600">You can disable cookies in your browser settings if you prefer.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-container">
+                <h2 class="text-3xl font-semibold text-primary font-['Playfair_Display'] mb-6 heading-observer">Third-Party Disclosure</h2>
+                <div class="section-observer">
+                    <div class="border-l-4 border-primary pl-6">
+                        <p class="text-gray-700 mb-3 font-medium">We do not sell or trade your personal data.</p>
+                        <p class="text-gray-600">Information may be shared only with trusted service providers (for example, payment processors or marketing tools) who assist us in operations, under strict confidentiality.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-container">
+                <h2 class="text-3xl font-semibold text-primary font-['Playfair_Display'] mb-6 heading-observer">Your Consent</h2>
+                <div class="section-observer">
+                    <p class="text-gray-700">By using our website or submitting your information to us, you consent to this Privacy Policy and our data-handling practices.</p>
+                </div>
+            </section>
+
+            <section class="section-container">
+                <h2 class="text-3xl font-semibold text-primary font-['Playfair_Display'] mb-6 heading-observer">Your Rights</h2>
+                <div class="section-observer">
+                    <div class="bg-blue-50 rounded-lg p-6">
+                        <div class="flex items-start">
+                            <div class="w-8 h-8 flex items-center justify-center bg-blue-600 rounded-full mr-4 mt-1 flex-shrink-0">
+                                <i class="ri-user-settings-line text-white text-lg"></i>
+                            </div>
+                            <p class="text-gray-700">You can request to review, update, or delete your personal information by contacting our HR or IT department.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="section-container">
+                <h2 class="text-3xl font-semibold text-primary font-['Playfair_Display'] mb-6 heading-observer">Policy Updates</h2>
+                <div class="section-observer">
+                    <p class="text-gray-700 mb-3">This Privacy Policy may be updated periodically to reflect operational or legal changes.</p>
+                    <p class="text-gray-600">The latest version will always be available on our official website.</p>
+                </div>
+            </section>
+
+            <section class="section-container">
+                <h2 class="text-3xl font-semibold text-primary font-['Playfair_Display'] mb-6 heading-observer">Contact Us</h2>
+                <div class="section-observer">
+                    <p class="text-lg mb-6">For questions about this policy or data use:</p>
+                    <div class="grid md:grid-cols-3 gap-6">
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-4">
+                                <i class="ri-mail-line text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-wide">Email</p>
+                                <p class="text-gray-700 font-medium">privacy@autoveer.com</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-4">
+                                <i class="ri-phone-line text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-wide">Phone</p>
+                                <p class="text-gray-700 font-medium">+91 7419646440</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center">
+                            <div class="w-10 h-10 flex items-center justify-center bg-primary rounded-full mr-4">
+                                <i class="ri-map-pin-line text-white text-lg"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-500 uppercase tracking-wide">Address</p>
+                                <p class="text-gray-700 font-medium">AutoVeer Group Head Office, New Delhi, India</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <button class="back-to-top bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center transition-all duration-300 hover:bg-secondary !rounded-button" onclick="scrollToTop()">
+        <i class="ri-arrow-up-line text-lg"></i>
+    </button>
+
+    <footer class="bg-gray-900 text-white py-12 sm:py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-12">
+<div class="sm:col-span-2 lg:col-span-1">
+<div class="font-['Pacifico'] text-xl sm:text-2xl text-white mb-3 sm:mb-4">AutoVeer Group</div>
+<p class="text-gray-300 leading-relaxed text-sm sm:text-base">A vision for India's future — moving, resting, and creating with purpose.</p>
+</div>
+<div>
+<h4 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Industries</h4>
+<ul class="space-y-1.5 sm:space-y-2">
+<li><a href="automobile.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">AutoVeer Automobiles</a></li>
+<li><a href="autoveerhospitality.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">AutoVeer Hospitality</a></li>
+<li><a href="namasteindiahandicraft.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Namaste India Handicrafts</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Quick Links</h4>
+<ul class="space-y-1.5 sm:space-y-2">
+<li><a href="aboutus.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">About Us</a></li>
+<li><a href="contactus.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Contact Us</a></li>
+<li><a href="careers.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Careers / Internships</a></li>
+<li><a href="events.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Events</a></li>
+<li><a href="termsandconditions.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Terms & Conditions</a></li>
+<li><a href="privacypolicy.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="sm:col-span-2 lg:col-span-1">
+<h4 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Follow Us</h4>
+<div class="flex gap-3 sm:gap-4 mb-4 sm:mb-6">
+<a href="https://www.instagram.com/autoveergroup/" class="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+<i class="ri-instagram-line text-base sm:text-lg"></i>
+</a>
+<a href="https://www.facebook.com/AutoveerPvtLtd" class="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+<i class="ri-facebook-line text-base sm:text-lg"></i>
+</a>
+<a href="https://www.linkedin.com/in/namaste-dwaar-the-gateway-to-rural-india-81b266399/" class="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+<i class="ri-linkedin-line text-base sm:text-lg"></i>
+</a>
+</div>
+<h5 class="font-semibold mb-2 text-sm sm:text-base">Our Locations</h5>
+<p class="text-gray-300 text-xs sm:text-sm">New Delhi, India<br>Haryana & Delhi NCR</p>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-6 sm:pt-8 text-center">
+<p class="text-gray-400 text-sm">&copy; 2026 AutoVeer Group. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+    <script id="scroll-animations">
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const sectionObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            const headingObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.section-observer').forEach(el => {
+                sectionObserver.observe(el);
+            });
+
+            document.querySelectorAll('.heading-observer').forEach(el => {
+                headingObserver.observe(el);
+            });
+        });
+    </script>
+
+    <script id="back-to-top">
+        document.addEventListener('DOMContentLoaded', function() {
+            const backToTopBtn = document.querySelector('.back-to-top');
+            
+            window.addEventListener('scroll', function() {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add('show');
+                } else {
+                    backToTopBtn.classList.remove('show');
+                }
+            });
+        });
+
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_V7JMHB0fVJGRu8UHyrsj6pSL1BS76P5zD8qCi7lrTTV', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+    window.shareKey = '77cfGMJSzn4EawdAQZLxTg';
+    window.host = 'readdy.ai';
+</script>
+<script id="navigation-toggle">
+document.addEventListener('DOMContentLoaded', function() {
+const menuButton = document.querySelector('button[class*="lg:hidden"]');
+const mobileMenu = document.createElement('div');
+mobileMenu.className = 'lg:hidden bg-white border-t border-gray-100 px-4 sm:px-6 py-4 space-y-4 hidden';
+mobileMenu.innerHTML = `
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors py-2">About Us</a>
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors py-2">Automobiles</a>
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors py-2">Hospitality</a>
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors py-2">Handicrafts</a>
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors py-2">Contact</a>
+`;
+document.querySelector('header nav').appendChild(mobileMenu);
+menuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+const icon = menuButton.querySelector('i');
+icon.className = mobileMenu.classList.contains('hidden') ? 'ri-menu-line text-xl' : 'ri-close-line text-xl';
+});
+});
+</script>
+</html>

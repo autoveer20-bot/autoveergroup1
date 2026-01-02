@@ -1,0 +1,465 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers at AutoVeer Group</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#0A1D56',
+                        secondary: '#081536'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '14px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css">
+    
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        
+        .font-playfair { font-family: 'Playfair Display', serif; }
+        .font-poppins { font-family: 'Poppins', sans-serif; }
+        
+        .dot-pattern {
+            background-image: radial-gradient(circle, #081536 1px, transparent 1px);
+            background-size: 20px 20px;
+            opacity: 0.03;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .btn-primary {
+            transition: all 0.3s ease;
+        }
+        
+        .btn-primary:hover {
+            background-color: #0A1D56;
+            color: white;
+        }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .testimonial-slider {
+            overflow: hidden;
+        }
+        
+        .testimonial-track {
+            display: flex;
+            transition: transform 0.5s ease;
+        }
+        
+        .testimonial-slide {
+            min-width: 100%;
+            flex-shrink: 0;
+        }
+    </style>
+</head>
+<header class="bg-white shadow-sm border-b border-gray-100">
+<nav class="px-4 sm:px-6 py-3 sm:py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="font-['Pacifico'] text-lg sm:text-xl md:text-2xl text-primary">AutoVeer Group</div>
+<div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+<a href="aboutus.html" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">About Us</a>
+<a href="automobile.html" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Automobiles</a>
+<a href="autoveerhospitality.html" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Hospitality</a>
+<a href="namasteindiahandicraft.html" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Handicrafts</a>
+<a href="contactus.html" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Contact</a>
+</div>
+<button class="lg:hidden w-10 h-10 flex items-center justify-center rounded-md hover:bg-gray-100 transition-colors">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</nav>
+</header>
+<body class="bg-white font-poppins text-gray-800 overflow-x-hidden">
+    <!-- Hero Section -->
+    <section class="min-h-screen bg-white relative flex items-center justify-center px-4 py-20">
+        <div class="dot-pattern absolute inset-0"></div>
+        <div class="max-w-6xl mx-auto text-center relative z-10 fade-in">
+            <div class="w-20 h-1 bg-primary mx-auto mb-8 rounded-full"></div>
+            <h1 class="font-playfair text-6xl md:text-7xl lg:text-8xl font-bold mb-6">
+                <span class="text-black">Careers</span> <span class="text-gray-700">at AutoVeer</span>
+            </h1>
+            <div class="w-32 h-1 bg-primary mx-auto mb-8 rounded-full"></div>
+            <p class="font-poppins text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+                Join our innovative team and drive the future of automotive excellence. Build your career with industry leaders committed to innovation, sustainability, and growth.
+            </p>
+        </div>
+    </section>
+
+    <!-- Quick Apply Form -->
+    <section class="py-20 px-4 bg-white fade-in">
+        <div class="max-w-2xl mx-auto">
+            <div class="bg-white border border-primary/20 rounded-2xl p-8 shadow-lg">
+                <h2 class="font-playfair text-3xl font-semibold text-gray-800 mb-2 text-center">Quick Apply</h2>
+                <p class="text-gray-600 text-center mb-8">Start your journey with AutoVeer today</p>
+                
+                <form id="quickApplyForm" class="space-y-6">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
+                        <input type="text" id="fullName" required class="w-full px-4 py-3 border border-gray-200 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
+                        <input type="email" id="email" required class="w-full px-4 py-3 border border-gray-200 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Phone Number *</label>
+                        <input type="tel" id="phone" required class="w-full px-4 py-3 border border-gray-200 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                    </div>
+                    
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Resume (Optional)</label>
+                        <input type="file" id="resume" accept=".pdf,.doc,.docx" class="w-full px-4 py-3 border border-gray-200 rounded-button focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent transition-all">
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-white border-2 border-primary text-primary py-4 px-6 rounded-button font-medium btn-primary !rounded-button whitespace-nowrap">
+                        Submit Application
+                    </button>
+                </form>
+                
+                <p class="text-sm text-gray-500 text-center mt-4">
+                    <i class="ri-whatsapp-line w-4 h-4 flex items-center justify-center inline-block mr-1"></i>
+                    You'll be redirected to WhatsApp to complete your application
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Open Positions -->
+    <section class="py-20 px-4 bg-white fade-in">
+        <div class="max-w-7xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-semibold text-gray-800 mb-4">Open Positions</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Discover exciting opportunities across our organization</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white border border-primary/20 rounded-2xl p-8 card-hover">
+                    <h3 class="font-playfair text-2xl font-semibold text-gray-800 mb-3">Senior Software Engineer</h3>
+                    <p class="text-primary font-medium mb-4">Bangalore, India</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Lead development of next-generation automotive software solutions. Work with cutting-edge technologies in autonomous driving and connected vehicles.</p>
+                    <button onclick="applyForPosition('Senior Software Engineer', 'Bangalore')" class="w-full bg-white border-2 border-primary text-primary py-3 px-6 rounded-button font-medium btn-primary !rounded-button whitespace-nowrap">
+                        Apply Now
+                    </button>
+                </div>
+                
+                <div class="bg-white border border-primary/20 rounded-2xl p-8 card-hover">
+                    <h3 class="font-playfair text-2xl font-semibold text-gray-800 mb-3">Product Manager</h3>
+                    <p class="text-primary font-medium mb-4">Mumbai, India</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Drive product strategy and roadmap for innovative automotive solutions. Collaborate with cross-functional teams to deliver exceptional user experiences.</p>
+                    <button onclick="applyForPosition('Product Manager', 'Mumbai')" class="w-full bg-white border-2 border-primary text-primary py-3 px-6 rounded-button font-medium btn-primary !rounded-button whitespace-nowrap">
+                        Apply Now
+                    </button>
+                </div>
+                
+                <div class="bg-white border border-primary/20 rounded-2xl p-8 card-hover">
+                    <h3 class="font-playfair text-2xl font-semibold text-gray-800 mb-3">UX/UI Designer</h3>
+                    <p class="text-primary font-medium mb-4">Delhi, India</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Create intuitive and engaging user interfaces for automotive applications. Shape the future of in-vehicle user experiences and digital touchpoints.</p>
+                    <button onclick="applyForPosition('UX/UI Designer', 'Delhi')" class="w-full bg-white border-2 border-primary text-primary py-3 px-6 rounded-button font-medium btn-primary !rounded-button whitespace-nowrap">
+                        Apply Now
+                    </button>
+                </div>
+                
+                <div class="bg-white border border-primary/20 rounded-2xl p-8 card-hover">
+                    <h3 class="font-playfair text-2xl font-semibold text-gray-800 mb-3">Data Scientist</h3>
+                    <p class="text-primary font-medium mb-4">Hyderabad, India</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Analyze complex automotive data to drive insights and innovation. Work on machine learning models for predictive maintenance and optimization.</p>
+                    <button onclick="applyForPosition('Data Scientist', 'Hyderabad')" class="w-full bg-white border-2 border-primary text-primary py-3 px-6 rounded-button font-medium btn-primary !rounded-button whitespace-nowrap">
+                        Apply Now
+                    </button>
+                </div>
+                
+                <div class="bg-white border border-primary/20 rounded-2xl p-8 card-hover">
+                    <h3 class="font-playfair text-2xl font-semibold text-gray-800 mb-3">Sales Manager</h3>
+                    <p class="text-primary font-medium mb-4">Chennai, India</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Lead sales initiatives and build strategic partnerships. Drive revenue growth through innovative sales strategies and customer relationship management.</p>
+                    <button onclick="applyForPosition('Sales Manager', 'Chennai')" class="w-full bg-white border-2 border-primary text-primary py-3 px-6 rounded-button font-medium btn-primary !rounded-button whitespace-nowrap">
+                        Apply Now
+                    </button>
+                </div>
+                
+                <div class="bg-white border border-primary/20 rounded-2xl p-8 card-hover">
+                    <h3 class="font-playfair text-2xl font-semibold text-gray-800 mb-3">Marketing Specialist</h3>
+                    <p class="text-primary font-medium mb-4">Pune, India</p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">Develop and execute comprehensive marketing campaigns. Build brand awareness and drive customer engagement through digital and traditional channels.</p>
+                    <button onclick="applyForPosition('Marketing Specialist', 'Pune')" class="w-full bg-white border-2 border-primary text-primary py-3 px-6 rounded-button font-medium btn-primary !rounded-button whitespace-nowrap">
+                        Apply Now
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Employee Feedback -->
+    <section class="py-20 px-4 bg-white fade-in">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <h2 class="font-playfair text-4xl md:text-5xl font-semibold text-gray-800 mb-4">What Our Team Says</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">Hear from our employees about their experience at AutoVeer</p>
+            </div>
+            
+            <div class="testimonial-slider relative">
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-slide">
+                        <div class="max-w-4xl mx-auto text-center">
+                            <div class="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden">
+                                <img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20confident%20female%20software%20engineer%20with%20warm%20smile%2C%20clean%20studio%20lighting%2C%20modern%20business%20attire%2C%20technology%20background%2C%20corporate%20portrait%20style&width=200&height=200&seq=emp1&orientation=squarish" alt="Employee" class="w-full h-full object-cover object-top">
+                            </div>
+                            <div class="w-8 h-8 mx-auto mb-6 flex items-center justify-center">
+                                <i class="ri-double-quotes-l text-primary text-2xl"></i>
+                            </div>
+                            <p class="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed font-light">
+                                "Working at AutoVeer has been transformative for my career. The innovative projects, supportive team culture, and opportunities for growth make this an exceptional place to work."
+                            </p>
+                            <h4 class="font-playfair text-xl font-semibold text-gray-800">Sarah Johnson</h4>
+                            <p class="text-primary font-medium">Senior Software Engineer</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="max-w-4xl mx-auto text-center">
+                            <div class="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden">
+                                <img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20confident%20male%20product%20manager%20with%20friendly%20expression%2C%20clean%20studio%20lighting%2C%20modern%20business%20suit%2C%20technology%20background%2C%20corporate%20portrait%20style&width=200&height=200&seq=emp2&orientation=squarish" alt="Employee" class="w-full h-full object-cover object-top">
+                            </div>
+                            <div class="w-8 h-8 mx-auto mb-6 flex items-center justify-center">
+                                <i class="ri-double-quotes-l text-primary text-2xl"></i>
+                            </div>
+                            <p class="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed font-light">
+                                "The collaborative environment and cutting-edge technology at AutoVeer allow me to push boundaries and create products that truly make a difference in the automotive industry."
+                            </p>
+                            <h4 class="font-playfair text-xl font-semibold text-gray-800">Michael Chen</h4>
+                            <p class="text-primary font-medium">Product Manager</p>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-slide">
+                        <div class="max-w-4xl mx-auto text-center">
+                            <div class="w-24 h-24 mx-auto mb-6 rounded-full overflow-hidden">
+                                <img src="https://readdy.ai/api/search-image?query=professional%20headshot%20of%20confident%20female%20UX%20designer%20with%20creative%20expression%2C%20clean%20studio%20lighting%2C%20modern%20casual%20business%20attire%2C%20design%20studio%20background%2C%20corporate%20portrait%20style&width=200&height=200&seq=emp3&orientation=squarish" alt="Employee" class="w-full h-full object-cover object-top">
+                            </div>
+                            <div class="w-8 h-8 mx-auto mb-6 flex items-center justify-center">
+                                <i class="ri-double-quotes-l text-primary text-2xl"></i>
+                            </div>
+                            <p class="text-xl md:text-2xl text-gray-700 mb-8 leading-relaxed font-light">
+                                "AutoVeer values creativity and innovation. As a designer, I have the freedom to explore new ideas and the support to bring them to life in meaningful ways."
+                            </p>
+                            <h4 class="font-playfair text-xl font-semibold text-gray-800">Emily Rodriguez</h4>
+                            <p class="text-primary font-medium">UX/UI Designer</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center mt-8 space-x-2">
+                    <button onclick="showTestimonial(0)" class="w-3 h-3 rounded-full bg-primary testimonial-dot active"></button>
+                    <button onclick="showTestimonial(1)" class="w-3 h-3 rounded-full bg-gray-300 testimonial-dot"></button>
+                    <button onclick="showTestimonial(2)" class="w-3 h-3 rounded-full bg-gray-300 testimonial-dot"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 sm:py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-12">
+<div class="sm:col-span-2 lg:col-span-1">
+<div class="font-['Pacifico'] text-xl sm:text-2xl text-white mb-3 sm:mb-4">AutoVeer Group</div>
+<p class="text-gray-300 leading-relaxed text-sm sm:text-base">A vision for India's future — moving, resting, and creating with purpose.</p>
+</div>
+<div>
+<h4 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Industries</h4>
+<ul class="space-y-1.5 sm:space-y-2">
+<li><a href="automobile.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">AutoVeer Automobiles</a></li>
+<li><a href="autoveerhospitality.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">AutoVeer Hospitality</a></li>
+<li><a href="namasteindiahandicraft.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Namaste India Handicrafts</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Quick Links</h4>
+<ul class="space-y-1.5 sm:space-y-2">
+<li><a href="aboutus.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">About Us</a></li>
+<li><a href="contactus.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Contact Us</a></li>
+<li><a href="careers.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Careers / Internships</a></li>
+<li><a href="events.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Events</a></li>
+<li><a href="termsandconditions.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Terms & Conditions</a></li>
+<li><a href="privacypolicy.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="sm:col-span-2 lg:col-span-1">
+<h4 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Follow Us</h4>
+<div class="flex gap-3 sm:gap-4 mb-4 sm:mb-6">
+<a href="https://www.instagram.com/autoveergroup/" class="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+<i class="ri-instagram-line text-base sm:text-lg"></i>
+</a>
+<a href="https://www.facebook.com/AutoveerPvtLtd" class="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+<i class="ri-facebook-line text-base sm:text-lg"></i>
+</a>
+<a href="https://www.linkedin.com/in/namaste-dwaar-the-gateway-to-rural-india-81b266399/" class="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+<i class="ri-linkedin-line text-base sm:text-lg"></i>
+</a>
+</div>
+<h5 class="font-semibold mb-2 text-sm sm:text-base">Our Locations</h5>
+<p class="text-gray-300 text-xs sm:text-sm">New Delhi, India<br>Haryana & Delhi NCR</p>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-6 sm:pt-8 text-center">
+<p class="text-gray-400 text-sm">&copy; 2026 AutoVeer Group. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+    <script id="whatsapp-redirect">
+        function buildWhatsAppURL(formData, position = null, location = null) {
+            const phone = "917419646440";
+            let message = "Hello AutoVeer HR Team,\n\n";
+            
+            if (position && location) {
+                message += `I would like to apply for the ${position} position in ${location}.\n\n`;
+            } else {
+                message += "I would like to apply for a position at AutoVeer Group.\n\n";
+            }
+            
+            message += "Here are my details:\n";
+            message += `Name: ${formData.name}\n`;
+            message += `Email: ${formData.email}\n`;
+            message += `Phone: ${formData.phone}\n\n`;
+            message += "I look forward to hearing from you.\n\nBest regards";
+            
+            const encodedMessage = encodeURIComponent(message);
+            return `https://wa.me/${phone}?text=${encodedMessage}`;
+        }
+
+        function applyForPosition(position, location) {
+            const name = document.getElementById('fullName')?.value || '';
+            const email = document.getElementById('email')?.value || '';
+            const phone = document.getElementById('phone')?.value || '';
+            
+            if (!name || !email || !phone) {
+                alert('Please fill out the Quick Apply form first before applying for specific positions.');
+                document.getElementById('fullName').focus();
+                return;
+            }
+            
+            const formData = { name, email, phone };
+            const whatsappURL = buildWhatsAppURL(formData, position, location);
+            window.open(whatsappURL, '_blank');
+        }
+
+        document.getElementById('quickApplyForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('fullName').value;
+            const email = document.getElementById('email').value;
+            const phone = document.getElementById('phone').value;
+            
+            const formData = { name, email, phone };
+            const whatsappURL = buildWhatsAppURL(formData);
+            window.open(whatsappURL, '_blank');
+        });
+    </script>
+
+    <script id="testimonial-slider">
+        let currentTestimonial = 0;
+        const totalTestimonials = 3;
+
+        function showTestimonial(index) {
+            const track = document.getElementById('testimonialTrack');
+            const dots = document.querySelectorAll('.testimonial-dot');
+            
+            currentTestimonial = index;
+            track.style.transform = `translateX(-${index * 100}%)`;
+            
+            dots.forEach((dot, i) => {
+                if (i === index) {
+                    dot.classList.remove('bg-gray-300');
+                    dot.classList.add('bg-primary');
+                } else {
+                    dot.classList.remove('bg-primary');
+                    dot.classList.add('bg-gray-300');
+                }
+            });
+        }
+
+        setInterval(() => {
+            currentTestimonial = (currentTestimonial + 1) % totalTestimonials;
+            showTestimonial(currentTestimonial);
+        }, 5000);
+    </script>
+
+    <script id="scroll-animations">
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_V7JMHB0fVJGRu8UHyrsj6pSL1BS76P5zD8qCi7lrTTV', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+    window.shareKey = '77cfGMJSzn4EawdAQZLxTg';
+    window.host = 'readdy.ai';
+</script>
+</html>

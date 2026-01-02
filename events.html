@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="https://static.readdy.ai/static/e.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Celebrating 2025 with AutoVeer - AutoVeer Group</title>
+    <script src="https://cdn.tailwindcss.com/3.4.16"></script>
+    <script>tailwind.config={theme:{extend:{colors:{primary:'#0A1D56',secondary:'#081536'},borderRadius:{'none':'0px','sm':'4px',DEFAULT:'8px','md':'12px','lg':'16px','xl':'20px','2xl':'24px','3xl':'32px','full':'9999px','button':'8px'}}}}</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        .playfair { font-family: 'Playfair Display', serif; }
+        .poppins { font-family: 'Poppins', sans-serif; }
+        .parallax-bg { background-attachment: fixed; background-size: cover; background-position: center; }
+        .masonry-grid { column-count: 4; column-gap: 1rem; }
+        .masonry-item { break-inside: avoid; margin-bottom: 1rem; }
+        @media (max-width: 1024px) { .masonry-grid { column-count: 3; } }
+        @media (max-width: 768px) { .masonry-grid { column-count: 2; } }
+        @media (max-width: 640px) { .masonry-grid { column-count: 1; } }
+        .scroll-arrow { animation: bounce 2s infinite; }
+        @keyframes bounce { 0%, 20%, 50%, 80%, 100% { transform: translateY(0); } 40% { transform: translateY(-10px); } 60% { transform: translateY(-5px); } }
+        .fade-in { opacity: 0; transform: translateY(30px); transition: all 0.8s ease; }
+        .fade-in.visible { opacity: 1; transform: translateY(0); }
+        .hover-zoom { transition: transform 0.3s ease; }
+        .hover-zoom:hover { transform: scale(1.05); }
+        .lightbox { display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.9); z-index: 1000; }
+        .lightbox.active { display: flex; align-items: center; justify-content: center; }
+        .slider-container { overflow: hidden; }
+        .slider-track { display: flex; transition: transform 0.5s ease; }
+        .gradient-overlay { background: linear-gradient(135deg, rgba(10, 29, 86, 0.8) 0%, rgba(8, 21, 54, 0.6) 100%); }
+    </style>
+</head>
+<header class="bg-white shadow-sm border-b border-gray-100">
+<nav class="px-4 sm:px-6 py-3 sm:py-4">
+<div class="max-w-7xl mx-auto flex items-center justify-between">
+<div class="font-['Pacifico'] text-lg sm:text-xl md:text-2xl text-primary">AutoVeer Group</div>
+<div class="hidden lg:flex items-center space-x-6 xl:space-x-8">
+<a href="#" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">About Us</a>
+<a href="#" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Automobiles</a>
+<a href="#" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Hospitality</a>
+<a href="#" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Handicrafts</a>
+<a href="#" class="text-gray-700 hover:text-primary transition-colors text-sm xl:text-base">Contact</a>
+</div>
+<button class="lg:hidden w-10 h-10 flex items-center justify-center rounded-md hover:bg-gray-100 transition-colors">
+<i class="ri-menu-line text-xl"></i>
+</button>
+</div>
+</nav>
+</header>
+<body class="bg-white">
+    <!-- Navigation -->
+    
+
+    <!-- Hero Section -->
+    <section class="relative h-screen w-full overflow-hidden">
+        <div class="absolute inset-0 parallax-bg" style="background-image: url('events1.jpeg')"></div>
+        <div class="absolute inset-0 gradient-overlay"></div>
+        <div class="relative h-full flex items-center justify-center text-center px-4">
+            <div class="max-w-4xl mx-auto">
+                <h1 class="playfair text-5xl md:text-7xl font-bold text-white mb-6 fade-in">
+                    AutoVeer Events 2025
+                </h1>
+                <h2 class="playfair text-3xl md:text-4xl text-white/90 mb-8 fade-in">
+                    Memories That Move Us
+                </h2>
+                <p class="poppins text-xl md:text-2xl text-white/80 mb-12 max-w-3xl mx-auto fade-in">
+                    From grand celebrations to meaningful gatherings — a year of togetherness, success, and unforgettable experiences.
+                </p>
+                <div class="scroll-arrow">
+                    <i class="ri-arrow-down-line text-white text-3xl"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Introduction Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="playfair text-4xl md:text-5xl font-bold text-black mb-6">Where Every Moment Matters</h2>
+                <p class="poppins text-lg text-gray-700 max-w-4xl mx-auto leading-relaxed">
+                    At AutoVeer Group, we believe every occasion deserves to be celebrated with passion and precision. Whether it's a festive gala, a corporate summit, or a personal milestone — our hospitality, creativity, and attention to detail turn every event into a memorable story.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="fade-in">
+                    <h3 class="playfair text-3xl font-semibold text-primary mb-6">The Spirit of AutoVeer Events</h3>
+                    <p class="poppins text-gray-700 mb-6 leading-relaxed">
+                        Our journey through 2025 has been marked by extraordinary celebrations, meaningful connections, and countless moments of joy. From intimate family gatherings to grand corporate galas, we've had the privilege of being part of your most important occasions.
+                    </p>
+                    <p class="poppins text-gray-700 leading-relaxed">
+                        Each event tells a unique story, and we're honored to help you write yours with elegance, warmth, and unforgettable experiences that last a lifetime.
+                    </p>
+                </div>
+                <div class="fade-in">
+                    <img src="events2.jpeg" alt="Event Planning Team" class="w-full h-80 object-cover object-top !rounded-xl shadow-lg hover-zoom">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Collage Section -->
+    <section id="gallery" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="playfair text-4xl md:text-5xl font-bold text-black mb-6">Best Moments of 2025</h2>
+                <p class="poppins text-lg text-gray-700 max-w-3xl mx-auto">
+                    A visual journey through our most memorable celebrations, corporate achievements, and heartwarming gatherings throughout the year.
+                </p>
+            </div>
+            
+            <div class="masonry-grid fade-in">
+                <div class="masonry-item relative group cursor-pointer" onclick="openLightbox('events3.jpg')">
+                    <img src="events3.jpg" alt="Christmas Carnival" class="w-full !rounded-xl shadow-lg hover-zoom">
+                    <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity !rounded-xl flex items-center justify-center">
+                        <h3 class="playfair text-white text-2xl font-semibold">Christmas Carnival</h3>
+                    </div>
+                </div>
+                
+                <div class="masonry-item relative group cursor-pointer" onclick="openLightbox('events4.jpeg')">
+                    <img src="events4.jpeg" alt="Corporate Achievement Day" class="w-full !rounded-xl shadow-lg hover-zoom">
+                    <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity !rounded-xl flex items-center justify-center">
+                        <h3 class="playfair text-white text-2xl font-semibold">Corporate Achievement Day</h3>
+                    </div>
+                </div>
+                
+                <div class="masonry-item relative group cursor-pointer" onclick="openLightbox('events5.jpeg')">
+                    <img src="events5.jpeg" alt="Employee Engagement Festival" class="w-full !rounded-xl shadow-lg hover-zoom">
+                    <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity !rounded-xl flex items-center justify-center">
+                        <h3 class="playfair text-white text-2xl font-semibold">Employee Fest</h3>
+                    </div>
+                </div>
+                
+                <div class="masonry-item relative group cursor-pointer" onclick="openLightbox('events6.png')">
+                    <img src="events6.png" alt="Family Days" class="w-full !rounded-xl shadow-lg hover-zoom">
+                    <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity !rounded-xl flex items-center justify-center">
+                        <h3 class="playfair text-white text-2xl font-semibold">Family Days</h3>
+                    </div>
+                </div>
+                
+                <div class="masonry-item relative group cursor-pointer" onclick="openLightbox('events7.jpeg')">
+                    <img src="events7.jpeg" alt="New Year Gala" class="w-full !rounded-xl shadow-lg hover-zoom">
+                    <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity !rounded-xl flex items-center justify-center">
+                        <h3 class="playfair text-white text-2xl font-semibold">New Year Gala</h3>
+                    </div>
+                </div>
+                
+                <div class="masonry-item relative group cursor-pointer" onclick="openLightbox('events8.jpeg')">
+                    <img src="events8.jpeg" alt="Luxury Banquet Events" class="w-full !rounded-xl shadow-lg hover-zoom">
+                    <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity !rounded-xl flex items-center justify-center">
+                        <h3 class="playfair text-white text-2xl font-semibold">Luxury Banquets</h3>
+                    </div>
+                </div>
+                
+                <div class="masonry-item relative group cursor-pointer" onclick="openLightbox('events9.jpeg')">
+                    <img src="events9.jpeg" alt="Birthday Celebrations" class="w-full !rounded-xl shadow-lg hover-zoom">
+                    <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity !rounded-xl flex items-center justify-center">
+                        <h3 class="playfair text-white text-2xl font-semibold">Birthday Celebrations</h3>
+                    </div>
+                </div>
+                
+                <div class="masonry-item relative group cursor-pointer" onclick="openLightbox('events10.jpeg')">
+                    <img src="events10.jpeg" alt="Resort & Villa Experiences" class="w-full !rounded-xl shadow-lg hover-zoom">
+                    <div class="absolute inset-0 bg-primary/80 opacity-0 group-hover:opacity-100 transition-opacity !rounded-xl flex items-center justify-center">
+                        <h3 class="playfair text-white text-2xl font-semibold">Resort Experiences</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Highlight Slider Section -->
+    <section id="events" class="py-20 bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <h2 class="playfair text-4xl md:text-5xl font-bold text-black mb-6">This Year in Motion</h2>
+                <p class="poppins text-lg text-gray-700">Relive the highlights of our most spectacular events throughout 2025</p>
+            </div>
+            
+            <div class="slider-container relative fade-in">
+                <div class="slider-track" id="slider">
+                    <div class="min-w-full">
+                        <div class="grid md:grid-cols-2 gap-12 items-center">
+                            <img src="events11.jpg" alt="Christmas Carnival Performance" class="w-full h-80 object-cover object-top !rounded-xl shadow-lg">
+                            <div>
+                                <h3 class="playfair text-3xl font-semibold text-primary mb-4">Christmas Carnival 2025</h3>
+                                <h4 class="playfair text-xl text-gray-800 mb-4">Joy and Togetherness</h4>
+                                <p class="poppins text-gray-700 leading-relaxed">Our annual Christmas Carnival brought families and colleagues together for an evening of festive magic, delicious cuisine, and heartwarming performances that created memories to last a lifetime.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="min-w-full">
+                        <div class="grid md:grid-cols-2 gap-12 items-center">
+                            <img src="events12.png" alt="Corporate Meet" class="w-full h-80 object-cover object-top !rounded-xl shadow-lg">
+                            <div>
+                                <h3 class="playfair text-3xl font-semibold text-primary mb-4">Corporate Meet</h3>
+                                <h4 class="playfair text-xl text-gray-800 mb-4">Powering Partnerships</h4>
+                                <p class="poppins text-gray-700 leading-relaxed">Strategic partnerships and business excellence took center stage as industry leaders gathered to share insights, celebrate achievements, and forge new pathways for success.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="min-w-full">
+                        <div class="grid md:grid-cols-2 gap-12 items-center">
+                            <img src="events13.png" alt="Namaste Dwaar Family Retreat" class="w-full h-80 object-cover object-top !rounded-xl shadow-lg">
+                            <div>
+                                <h3 class="playfair text-3xl font-semibold text-primary mb-4">Namaste Dwaar Family Retreat</h3>
+                                <h4 class="playfair text-xl text-gray-800 mb-4">Moments of Bliss</h4>
+                                <p class="poppins text-gray-700 leading-relaxed">Families found their perfect escape at Namaste Dwaar, where traditional Indian hospitality meets modern luxury, creating unforgettable moments of peace and connection.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="min-w-full">
+                        <div class="grid md:grid-cols-2 gap-12 items-center">
+                            <img src="events14.jpg" alt="IndRaj Villa Nights" class="w-full h-80 object-cover object-top !rounded-xl shadow-lg">
+                            <div>
+                                <h3 class="playfair text-3xl font-semibold text-primary mb-4">IndRaj Villa Nights</h3>
+                                <h4 class="playfair text-xl text-gray-800 mb-4">Private Luxury</h4>
+                                <p class="poppins text-gray-700 leading-relaxed">Exclusive villa experiences at IndRaj offered guests the ultimate in privacy and luxury, with personalized service and breathtaking settings for intimate celebrations.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="min-w-full">
+                        <div class="grid md:grid-cols-2 gap-12 items-center">
+                            <img src="events15.png" alt="Bajaj Team Conference" class="w-full h-80 object-cover object-top !rounded-xl shadow-lg">
+                            <div>
+                                <h3 class="playfair text-3xl font-semibold text-primary mb-4">IGL Team Conference</h3>
+                                <h4 class="playfair text-xl text-gray-800 mb-4">United in Vision</h4>
+                                <p class="poppins text-gray-700 leading-relaxed">The IGL team conference exemplified corporate excellence, bringing together visionary leaders to align strategies and celebrate collective achievements in a world-class setting.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <button onclick="prevSlide()" class="absolute left-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-primary p-3 !rounded-full shadow-lg transition-all">
+                    <i class="ri-arrow-left-line text-xl"></i>
+                </button>
+                <button onclick="nextSlide()" class="absolute right-4 top-1/2 transform -translate-y-1/2 bg-white/90 hover:bg-white text-primary p-3 !rounded-full shadow-lg transition-all">
+                    <i class="ri-arrow-right-line text-xl"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Inquiry Form -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-white !rounded-2xl shadow-xl p-8 md:p-12 fade-in">
+                <div class="text-center mb-8">
+                    <h2 class="playfair text-3xl md:text-4xl font-bold text-black mb-4">Plan Your Next Event With Us!</h2>
+                    <p class="poppins text-gray-700">Tell us what you're looking for, and our events team will reach out shortly.</p>
+                </div>
+                
+                <form id="eventForm" class="space-y-6">
+                    <div>
+                        <label class="block poppins text-sm font-medium text-gray-700 mb-2">Full Name</label>
+                        <input type="text" id="name" required class="w-full px-4 py-3 border border-gray-300 !rounded-button focus:ring-2 focus:ring-primary focus:border-transparent poppins text-sm">
+                    </div>
+                    
+                    <div>
+                        <label class="block poppins text-sm font-medium text-gray-700 mb-2">Email Address</label>
+                        <input type="email" id="email" required class="w-full px-4 py-3 border border-gray-300 !rounded-button focus:ring-2 focus:ring-primary focus:border-transparent poppins text-sm">
+                    </div>
+                    
+                    <div>
+                        <label class="block poppins text-sm font-medium text-gray-700 mb-2">Phone Number</label>
+                        <input type="tel" id="phone" required class="w-full px-4 py-3 border border-gray-300 !rounded-button focus:ring-2 focus:ring-primary focus:border-transparent poppins text-sm">
+                    </div>
+                    
+                    <div>
+                        <label class="block poppins text-sm font-medium text-gray-700 mb-2">Event Type</label>
+                        <div class="relative">
+                            <button type="button" id="dropdownButton" class="w-full px-4 py-3 border border-gray-300 !rounded-button focus:ring-2 focus:ring-primary focus:border-transparent poppins text-sm text-left bg-white flex items-center justify-between">
+                                <span id="selectedOption">Select your event type</span>
+                                <i class="ri-arrow-down-s-line text-gray-400"></i>
+                            </button>
+                            <div id="dropdownMenu" class="absolute top-full left-0 w-full bg-white border border-gray-300 !rounded-button mt-1 shadow-lg z-10 hidden">
+                                <div class="py-2">
+                                    <button type="button" class="w-full px-4 py-2 text-left hover:bg-gray-50 poppins text-sm" onclick="selectOption('Birthday Party 🎂')">I'm looking for a Birthday Party 🎂</button>
+                                    <button type="button" class="w-full px-4 py-2 text-left hover:bg-gray-50 poppins text-sm" onclick="selectOption('Banquet Hall 🏛️')">I'm looking for a Banquet Hall 🏛️</button>
+                                    <button type="button" class="w-full px-4 py-2 text-left hover:bg-gray-50 poppins text-sm" onclick="selectOption('Official Event 🏢')">I'm looking for an Official Event 🏢</button>
+                                    <button type="button" class="w-full px-4 py-2 text-left hover:bg-gray-50 poppins text-sm" onclick="selectOption('Corporate Event 💼')">I'm looking for a Corporate Event 💼</button>
+                                    <button type="button" class="w-full px-4 py-2 text-left hover:bg-gray-50 poppins text-sm" onclick="selectOption('Resort Stay 🏖️')">I'm looking for a Resort Stay or Celebration 🏖️</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <button type="submit" class="w-full bg-green-500 hover:bg-primary text-white py-4 !rounded-button poppins font-semibold text-lg transition-colors whitespace-nowrap">
+                        <i class="ri-whatsapp-line mr-2"></i>Send on WhatsApp
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 bg-primary text-white">
+        <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8 fade-in">
+            <h2 class="playfair text-4xl md:text-5xl font-bold mb-6">Let's Create Memories Together</h2>
+            <p class="poppins text-xl mb-8 opacity-90">From intimate gatherings to grand celebrations — AutoVeer makes every event unforgettable.</p>
+            <a href="https://wa.me/917419646440" class="inline-block bg-white text-primary px-8 py-4 !rounded-button poppins font-semibold text-lg hover:bg-gray-100 transition-colors whitespace-nowrap">
+                Contact Our Events Team →
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12 sm:py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6">
+<div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 mb-8 sm:mb-12">
+<div class="sm:col-span-2 lg:col-span-1">
+<div class="font-['Pacifico'] text-xl sm:text-2xl text-white mb-3 sm:mb-4">AutoVeer Group</div>
+<p class="text-gray-300 leading-relaxed text-sm sm:text-base">A vision for India's future — moving, resting, and creating with purpose.</p>
+</div>
+<div>
+<h4 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Industries</h4>
+<ul class="space-y-1.5 sm:space-y-2">
+<li><a href="automobile.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">AutoVeer Automobiles</a></li>
+<li><a href="autoveerhospitality.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">AutoVeer Hospitality</a></li>
+<li><a href="namasteindiahandicraft.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Namaste India Handicrafts</a></li>
+</ul>
+</div>
+<div>
+<h4 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Quick Links</h4>
+<ul class="space-y-1.5 sm:space-y-2">
+<li><a href="aboutus.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">About Us</a></li>
+<li><a href="contactus.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Contact Us</a></li>
+<li><a href="careers.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Careers / Internships</a></li>
+<li><a href="events.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Events</a></li>
+<li><a href="termsandconditions.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Terms & Conditions</a></li>
+<li><a href="privacypolicy.html" class="text-gray-300 hover:text-white transition-colors text-sm sm:text-base">Privacy Policy</a></li>
+</ul>
+</div>
+<div class="sm:col-span-2 lg:col-span-1">
+<h4 class="text-base sm:text-lg font-semibold mb-3 sm:mb-4">Follow Us</h4>
+<div class="flex gap-3 sm:gap-4 mb-4 sm:mb-6">
+<a href="https://www.instagram.com/autoveergroup/" class="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+<i class="ri-instagram-line text-base sm:text-lg"></i>
+</a>
+<a href="https://www.facebook.com/AutoveerPvtLtd" class="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+<i class="ri-facebook-line text-base sm:text-lg"></i>
+</a>
+<a href="https://www.linkedin.com/in/namaste-dwaar-the-gateway-to-rural-india-81b266399/" class="w-9 h-9 sm:w-10 sm:h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-gray-700 transition-colors">
+<i class="ri-linkedin-line text-base sm:text-lg"></i>
+</a>
+</div>
+<h5 class="font-semibold mb-2 text-sm sm:text-base">Our Locations</h5>
+<p class="text-gray-300 text-xs sm:text-sm">New Delhi, India<br>Haryana & Delhi NCR</p>
+</div>
+</div>
+<div class="border-t border-gray-800 pt-6 sm:pt-8 text-center">
+<p class="text-gray-400 text-sm">&copy; 2026 AutoVeer Group. All rights reserved.</p>
+</div>
+</div>
+</footer>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <div class="relative max-w-4xl max-h-full">
+            <img id="lightboxImage" src="" alt="" class="max-w-full max-h-full object-contain">
+            <button onclick="closeLightbox()" class="absolute top-4 right-4 bg-white/90 text-gray-800 p-2 !rounded-full hover:bg-white transition-colors">
+                <i class="ri-close-line text-xl"></i>
+            </button>
+        </div>
+    </div>
+
+    <script id="fade-animation">
+        document.addEventListener('DOMContentLoaded', function() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver(function(entries) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.fade-in').forEach(el => {
+                observer.observe(el);
+            });
+        });
+    </script>
+
+    <script id="slider-functionality">
+        let currentSlide = 0;
+        const totalSlides = 5;
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            updateSlider();
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            updateSlider();
+        }
+
+        function updateSlider() {
+            const slider = document.getElementById('slider');
+            slider.style.transform = `translateX(-${currentSlide * 100}%)`;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            setInterval(nextSlide, 5000);
+        });
+    </script>
+
+    <script id="lightbox-functionality">
+        function openLightbox(imageSrc) {
+            document.getElementById('lightboxImage').src = imageSrc;
+            document.getElementById('lightbox').classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+            document.body.style.overflow = 'auto';
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('lightbox').addEventListener('click', function(e) {
+                if (e.target === this) {
+                    closeLightbox();
+                }
+            });
+        });
+    </script>
+
+    <script id="dropdown-functionality">
+        let selectedEventType = '';
+
+        function selectOption(option) {
+            selectedEventType = option;
+            document.getElementById('selectedOption').textContent = option;
+            document.getElementById('dropdownMenu').classList.add('hidden');
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdownButton = document.getElementById('dropdownButton');
+            const dropdownMenu = document.getElementById('dropdownMenu');
+
+            dropdownButton.addEventListener('click', function() {
+                dropdownMenu.classList.toggle('hidden');
+            });
+
+            document.addEventListener('click', function(e) {
+                if (!dropdownButton.contains(e.target) && !dropdownMenu.contains(e.target)) {
+                    dropdownMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+
+    <script id="form-submission">
+        document.addEventListener('DOMContentLoaded', function() {
+            document.getElementById('eventForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const name = document.getElementById('name').value;
+                const email = document.getElementById('email').value;
+                const phone = document.getElementById('phone').value;
+                
+                if (!selectedEventType) {
+                    alert('Please select an event type');
+                    return;
+                }
+                
+                const message = `Hi AutoVeer Team, I'm interested in planning an event. Here are my details:%0A%0AName: ${encodeURIComponent(name)}%0AEmail: ${encodeURIComponent(email)}%0APhone: ${encodeURIComponent(phone)}%0AEvent Type: ${encodeURIComponent(selectedEventType)}%0A%0APlease contact me to discuss further details.`;
+                
+                window.open(`https://wa.me/917419646440?text=${message}`, '_blank');
+            });
+        });
+    </script>
+
+<script>
+    !function (t, e) { var o, n, p, r; e.__SV || (window.posthog = e, e._i = [], e.init = function (i, s, a) { function g(t, e) { var o = e.split("."); 2 == o.length && (t = t[o[0]], e = o[1]), t[e] = function () { t.push([e].concat(Array.prototype.slice.call(arguments, 0))) } } (p = t.createElement("script")).type = "text/javascript", p.crossOrigin = "anonymous", p.async = !0, p.src = s.api_host.replace(".i.posthog.com", "-assets.i.posthog.com") + "/static/array.js", (r = t.getElementsByTagName("script")[0]).parentNode.insertBefore(p, r); var u = e; for (void 0 !== a ? u = e[a] = [] : a = "posthog", u.people = u.people || [], u.toString = function (t) { var e = "posthog"; return "posthog" !== a && (e += "." + a), t || (e += " (stub)"), e }, u.people.toString = function () { return u.toString(1) + ".people (stub)" }, o = "init capture register register_once register_for_session unregister unregister_for_session getFeatureFlag getFeatureFlagPayload isFeatureEnabled reloadFeatureFlags updateEarlyAccessFeatureEnrollment getEarlyAccessFeatures on onFeatureFlags onSessionId getSurveys getActiveMatchingSurveys renderSurvey canRenderSurvey getNextSurveyStep identify setPersonProperties group resetGroups setPersonPropertiesForFlags resetPersonPropertiesForFlags setGroupPropertiesForFlags resetGroupPropertiesForFlags reset get_distinct_id getGroups get_session_id get_session_replay_url alias set_config startSessionRecording stopSessionRecording sessionRecordingStarted captureException loadToolbar get_property getSessionProperty createPersonProfile opt_in_capturing opt_out_capturing has_opted_in_capturing has_opted_out_capturing clear_opt_in_out_capturing debug".split(" "), n = 0; n < o.length; n++)g(u, o[n]); e._i.push([i, s, a]) }, e.__SV = 1) }(document, window.posthog || []);
+    posthog.init('phc_V7JMHB0fVJGRu8UHyrsj6pSL1BS76P5zD8qCi7lrTTV', {
+        api_host: 'https://us.i.posthog.com',
+        autocapture: false,
+        capture_pageview: false,
+        capture_pageleave: false,
+        capture_performance: {
+            web_vitals: false,
+        },
+        rageclick: false,
+    })
+    window.shareKey = '77cfGMJSzn4EawdAQZLxTg';
+    window.host = 'readdy.ai';
+</script>
+<script id="navigation-toggle">
+document.addEventListener('DOMContentLoaded', function() {
+const menuButton = document.querySelector('button[class*="lg:hidden"]');
+const mobileMenu = document.createElement('div');
+mobileMenu.className = 'lg:hidden bg-white border-t border-gray-100 px-4 sm:px-6 py-4 space-y-4 hidden';
+mobileMenu.innerHTML = `
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors py-2">About Us</a>
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors py-2">Automobiles</a>
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors py-2">Hospitality</a>
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors py-2">Handicrafts</a>
+<a href="#" class="block text-gray-700 hover:text-primary transition-colors py-2">Contact</a>
+`;
+document.querySelector('header nav').appendChild(mobileMenu);
+menuButton.addEventListener('click', function() {
+mobileMenu.classList.toggle('hidden');
+const icon = menuButton.querySelector('i');
+icon.className = mobileMenu.classList.contains('hidden') ? 'ri-menu-line text-xl' : 'ri-close-line text-xl';
+});
+});
+</script>
+</html>
